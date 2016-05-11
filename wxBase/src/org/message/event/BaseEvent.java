@@ -1,21 +1,23 @@
 package org.message.event;
 
 /**
- * 事件基类
+ * 锟铰硷拷锟斤拷锟斤拷
+ * 
+ * 
  * 
  * @author liufeng
  * @date 2013-11-02
  */
 public class BaseEvent {
-	// 开发者微信号
+	// 锟斤拷锟斤拷锟斤拷微锟脚猴拷
 	private String ToUserName;
-	// 发送方帐号（一个OpenID）
+	// 锟斤拷锟酵凤拷锟绞号ｏ拷一锟斤拷OpenID锟斤拷
 	private String FromUserName;
-	// 消息创建时间 （整型）
+	// 锟斤拷息锟斤拷锟斤拷时锟斤拷 锟斤拷锟斤拷锟酵ｏ拷
 	private long CreateTime;
-	// 消息类型
+	// 锟斤拷息锟斤拷锟斤拷
 	private String MsgType;
-	// 事件类型
+	// 锟铰硷拷锟斤拷锟斤拷
 	private String Event;
 
 	public String getToUserName() {
