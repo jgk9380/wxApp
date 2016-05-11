@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+            <title>我的账本</title>
+            <link type="text/css" rel="stylesheet" href="resources/css/share.css"/>
+            <link rel="stylesheet" href="resources/css/common.css"/>
+            <link rel="stylesheet" href="resources/css/weui.css"/>
+            <script type="text/javascript" src="resources/js/jquery1.js"></script>
+            <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+            <script type="text/javascript" src="resources/js/common1.js"></script>
+            <script type="text/javascript" src="resources/js/account4.js" charset="gbk"></script>
+            <script type="text/javascript" src="resources/js/sharelog2.js"></script>
+        </h:head>
+        <body ontouchstart="ontouchstart">
+            <h:form prependId="false">
+                <div id="toast" style="display: none;">
+                    <div class="weui_mask_transparent"></div>
+                    <div class="weui_toast">
+                        <i class="weui_icon_toast"></i>
+                        <p class="weui_toast_content" id="toastinfo">短信已发出</p>
+                    </div>
+                </div>
+                <div id="submitToast" class="weui_loading_toast" style="display:none;">
+                    <div class="weui_mask_transparent"></div>
+                    <div class="weui_toast">
+                        <div class="weui_loading">
+                            <!-- :) -->
+                            <div class="weui_loading_leaf weui_loading_leaf_0"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_1"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_2"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_3"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_4"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_5"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_6"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_7"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_8"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_9"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_10"></div>
+                            <div class="weui_loading_leaf weui_loading_leaf_11"></div>
+                        </div>
+                        <p class="weui_toast_content">正在提交充值</p>
+                    </div>
+                </div>
+                <div class="weui_dialog_confirm" style="display: none;" id="addFeedlg">
+                    <div class="weui_mask"></div>
+                    <div class="weui_dialog">
+                        <div class="weui_dialog_hd">
+                            <strong class="weui_dialog_title">缴费</strong>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">手机号码:</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" value="#{wxSession.wxUser.tele}" disabled="disabled"
+                                       id="tele"/>
+                            </div>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">缴费金额:</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请填写缴费金额" value="0"
+                                       id="addFeeCount"/>
+                            </div>
+                        </div>
+                        <div class="weui_dialog_ft">
+                            <a href="javascript:addFeeCancel(this)" class="weui_btn_dialog default">取消</a>
+                             
+                            <a href="javascript:addFeeSubmit(this)" class="weui_btn_dialog primary" id="submitAddFee">确定</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_dialog_confirm" style="display: none;" id="giveFeedlg">
+                    <div class="weui_mask"></div>
+                    <div class="weui_dialog">
+                        <div class="weui_dialog_hd">
+                            <strong class="weui_dialog_title">赠送话费</strong>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">手机号码:</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请填写手机号码"
+                                       id="giveTele"/>
+                            </div>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">赠送金额:</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请填写赠送金额" value="0"
+                                       id="giveFeeCount"/>
+                            </div>
+                        </div>
+                        <div class="weui_dialog_ft">
+                            <a href="javascript:giveFeeCancel(this)" class="weui_btn_dialog default">取消</a>
+                             
+                            <a href="javascript:giveFeeSubmit(this)" class="weui_btn_dialog primary" id='submitGiveFee'>确定</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="height:2em;"></div>
+                <img src="#{wxSession.wxUser.headimgurl}" alt=" " height="90" width="90" id="pic"/>
+                <div class="page"
+                     style="border:2px solid #888; padding:0.5em 0.5em 0.5em 0.5em ; margin: 0.5em 0.5em 0.5em 0.5em">
+                    <div class="weui_cells weui_cells_form">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            你的微信账本话费余额为： 
+                            <span id="feeInfo"></span>元
+                        </div>
+                        <div style="height:0.5em"></div>
+                        <div style="height:0.5em"></div>
+                    </div>
+                    <div style="height:0.5em"></div>
+                    <a href="javascript:addFee(this);" class="weui_btn  weui_btn_primary" id="openAddDialog">为自己缴费</a>                     
+                    <a href="javascript:giveFee(this);" class="weui_btn  weui_btn_primary" id="openGiveDialog">转送话费</a>                    
+                    <a href="javascript:shareMyAccount(this);" class="weui_btn  weui_btn_primary" id="shareMyAccount">分享我的账本</a>
+                </div>
+                <div id="shareit" onclick="closeShare();">
+                    <img class="arrow" src="resources/img/share-it.png" alt="1"/>                     
+                    <a href="#" id="follow">
+                        <p id="share-text">赶紧和你的小伙伴们分享一下你的成果吧,<br/>每次分享多有额外奖励哦！</p>
+                        <!--<img id="share-text" src="http://dev.vxtong.com/cases/nuannan/imgs/share-text.png" alt="1"/>--></a>
+                </div>
+              
+            </h:form>
+        </body>
+    </html>
+</f:view>

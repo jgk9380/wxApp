@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+            <title>我的账本</title>
+            <link type="text/css" rel="stylesheet" href="resources/js/jquery-ui-1.11.4.custom/jquery-ui.css"/>
+            <link type="text/css" rel="stylesheet" href="resources/css/share.css"/>
+            <link rel="stylesheet" href="resources/css/common.css"/>
+            <script type="text/javascript" src="resources/js/jquery1.js"></script>
+            <script type="text/javascript" src="resources/js/account_sec1.js"></script>
+            <script type="text/javascript" src="resources/js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+        </h:head>
+        <body ontouchstart="ontouchstart">
+            <img src="#{wxSession.wxUserBo.wxUser.headimgurl}" alt=" " height="90" width="90" id="pic"/>
+            <div id="tabs">
+                <ul>
+                    <li>
+                        <a href="#tabs-1">话费</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">流量</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-3">代金券</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-4">礼品</a>
+                    </li>
+                </ul>
+                <div id="tabs-1">
+                    <p>话费</p>
+                    <p>话费</p>
+                    <p>话费</p>
+                </div>
+                <div id="tabs-2">
+                    <p>流量</p>
+                    <p>流量</p>
+                    <p>流量</p>
+                </div>
+                <div id="tabs-3">
+                    <p>代金券</p>
+                </div>
+                <div id="tabs-4">
+                    <p>礼品</p>
+                </div>
+            </div>
+        </body>
+    </html>
+</f:view>

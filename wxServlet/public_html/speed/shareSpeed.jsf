@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='GBK'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+            <title>测试你的网速</title>
+            <link type="text/css" rel="stylesheet" href="../resources/css/weui.css"/>
+            <script type="text/javascript" src="../resources/js/sharelog2.js"></script>
+        </h:head>
+        <h:body>
+            <h:form>
+                <article class="weui_article">
+                    <div style="text-align:center;">
+                        <img src="#{param.imgUrl}" alt="#{param.shareName} "
+                             style="width:3cm;height:3cm;text-align: center;"/>
+                    </div>
+                    <section>
+                        <!--<i class="weui_icon_success_circle"></i>-->
+                        <h2 class="title">
+                            我是
+                            <span style="color:Red;">
+                                #{param.shareName}</span>
+                            ，
+                        </h2>
+                        <section>
+                            <p>
+                                我的网速为： 
+                                #{param.speed},目前排名第#{param.rank},我击败了
+                                #{param.percent}人。 
+                                <br/>
+                                 
+                                <span style="color:Red; font: x-large ;">你的网速是多少？</span>
+                            </p>
+                        </section>
+                        <!--<section>
+                            <p>扫描下面的二维码，关注'盐城联通'，点击‘刮刮卡’即可参加领取礼品。</p>
+                            <img src="/wx3/showqrcode?userId=#{param.userId}" alt=" " height="120" width="120"/>
+                        </section>-->
+                        <section class="aimeibian" style="border: 0px none; padding: 0px;">
+                            <p>扫描下面的二维码，关注'盐城联通'，即可参与赛网速活动。</p>
+                            <br/>
+                            <img src="/wx3/showqrcode?userId=#{param.userId}"
+                                 style=" position: absolute; width:4cm;height:4cm; float:left; z-index:2" alt=" "/>
+                            <!--<img   src="resources/img/dig1.gif"   style="position: absolute;  width:3cm;height:3cm; float:left; z-index:2"/>-->
+                            <img style="width:8cm;height:5.3cm;position: absolute;  margin-left:0.2cm; margin-top:-0.5cm;  z-index: 1"
+                                 src="../resources/img/dig2.gif" alt=" "/>
+                        </section>
+                    </section>
+                </article>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>

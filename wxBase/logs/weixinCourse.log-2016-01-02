@@ -1,0 +1,90 @@
+[INFO ] 2016-01-02 15:04:53,147 org.liufeng.weixin.main.MenuManager 菜单创建成功！
+[INFO ] 2016-01-02 15:12:46,058 org.liufeng.weixin.main.MenuManager 菜单创建成功！
+[INFO ] 2016-01-02 15:25:49,622 org.liufeng.weixin.main.MenuManager 菜单创建成功！
+[INFO ] 2016-01-02 15:46:20,942 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"点击查看<a href=\"http://blog.csdn.net/lyq8479\">柳峰的博客</a>"}}
+[INFO ] 2016-01-02 15:46:21,102 org.liufeng.course.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 15:46:21,128 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEdzejiHCDqafJbz4WNJtWTMbDcE","msgtype":"news","news":{"articles":[{"description":"","picurl":"http://www.egouji.com/xiaoq/game/doudizhu_big.png","title":"微信上也能斗地主","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Doudizhu/doudizhu.htm"},{"description":"","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"傲气雄鹰\n80后不得不玩的经典游戏","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Plane/aoqixiongying.html"}]}}
+[ERROR] 2016-01-02 15:46:21,255 org.liufeng.course.util.AdvancedUtil 客服消息发送失败 errcode:40003 errmsg:invalid openid hint: [UEtMFA0781age4]
+[INFO ] 2016-01-02 15:47:04,890 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"点击查看<a href=\"http://blog.csdn.net/lyq8479\">柳峰的博客</a>"}}
+[INFO ] 2016-01-02 15:47:05,045 org.liufeng.course.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 15:47:05,073 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"news","news":{"articles":[{"description":"","picurl":"http://www.egouji.com/xiaoq/game/doudizhu_big.png","title":"微信上也能斗地主","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Doudizhu/doudizhu.htm"},{"description":"","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"傲气雄鹰\n80后不得不玩的经典游戏","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Plane/aoqixiongying.html"}]}}
+[INFO ] 2016-01-02 15:47:05,220 org.liufeng.course.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 16:02:58,861 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"111点击查看<a href=\"http://blog.csdn.net/lyq8479\">柳峰的博客</a>"}}
+[INFO ] 2016-01-02 16:02:59,024 org.liufeng.course.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 16:05:22,639 org.liufeng.course.util.AdvancedUtil 创建临时带参二维码成功 ticket:gQGw8ToAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL296clZlZlBsY1dFSUFHTG1PeFRXAAIEwoSHVgMEhAMAAA== expire_seconds:900
+[INFO ] 2016-01-02 16:06:19,773 org.liufeng.course.util.AdvancedUtil 创建临时带参二维码成功 ticket:gQEj8joAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL056ci1iVERsWVdFWVEtYklFUlRXAAIE/ISHVgMEhAMAAA== expire_seconds:900
+[INFO ] 2016-01-02 16:06:41,641 org.liufeng.course.util.AdvancedUtil 创建临时带参二维码成功 ticket:gQEc8joAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL0xqcV83Yi1sSkdGZFZlOU1VQlRXAAIEEoWHVgMEhAMAAA== expire_seconds:900
+[ERROR] 2016-01-02 16:08:44,010 org.liufeng.course.util.AdvancedUtil 根据ticket换取二维码失败：{}
+java.io.FileNotFoundException: G:\download\gQEg7zoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2lIVVJ3VmJsTzFsQ0ZuQ0Y1bG5WAAIEW35+UgMEAAAAAA==.jpg (设备未就绪。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.liufeng.course.util.AdvancedUtil.getQRCode(AdvancedUtil.java:355)
+	at org.liufeng.weixin.main.testClient.testGetQRCode(testClient.java:72)
+	at org.liufeng.weixin.main.testClient.main(testClient.java:158)
+[ERROR] 2016-01-02 16:09:28,681 org.liufeng.course.util.AdvancedUtil 根据ticket换取二维码失败：{}
+java.io.FileNotFoundException: G:\download\gQEj8joAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL056ci1iVERsWVdFWVEtYklFUlRXAAIE\ISHVgMEhAMAAA==.jpg (设备未就绪。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.liufeng.course.util.AdvancedUtil.getQRCode(AdvancedUtil.java:355)
+	at org.liufeng.weixin.main.testClient.testGetQRCode(testClient.java:72)
+	at org.liufeng.weixin.main.testClient.main(testClient.java:158)
+[INFO ] 2016-01-02 16:10:56,106 org.liufeng.course.util.AdvancedUtil 修改分组名成功 errcode:0 errmsg:ok
+[ERROR] 2016-01-02 16:10:56,238 org.liufeng.course.util.AdvancedUtil 移动用户分组失败 errcode:49003 errmsg:not match openid with appid hint: [gJHv3a0256vr21]
+[INFO ] 2016-01-02 16:11:47,070 org.liufeng.course.util.AdvancedUtil 修改分组名成功 errcode:0 errmsg:ok
+[ERROR] 2016-01-02 16:11:47,192 org.liufeng.course.util.AdvancedUtil 移动用户分组失败 errcode:49003 errmsg:not match openid with appid hint: [LoBpba0307vr18]
+[INFO ] 2016-01-02 16:13:36,002 org.liufeng.course.util.AdvancedUtil 修改分组名成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 16:13:36,161 org.liufeng.course.util.AdvancedUtil 移动用户分组成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 16:13:49,815 org.liufeng.course.util.AdvancedUtil 修改分组名成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 16:13:49,957 org.liufeng.course.util.AdvancedUtil 移动用户分组成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 16:15:20,561 org.liufeng.course.util.AdvancedUtil 修改分组名成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 16:15:20,699 org.liufeng.course.util.AdvancedUtil 移动用户分组成功 errcode:0 errmsg:ok
+[ERROR] 2016-01-02 16:23:22,351 org.liufeng.course.util.CommonUtil 获取token失败 errcode:40013 errmsg:invalid appid hint: [nz0002vr22]
+[ERROR] 2016-01-02 16:29:00,619 org.liufeng.course.util.AdvancedUtil 根据ticket换取二维码失败：{}
+java.io.FileNotFoundException: G:\download\gQE58ToAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2pUcnQ4TnZsZUdFQmoweGVBeFRXAAIETIqHVgMEhAMAAA==.jpg (设备未就绪。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.liufeng.course.util.AdvancedUtil.getQRCode(AdvancedUtil.java:356)
+	at org.liufeng.weixin.main.testClient.testGetQRCode(testClient.java:74)
+	at org.liufeng.weixin.main.testClient.main(testClient.java:164)
+[ERROR] 2016-01-02 16:31:10,229 org.liufeng.course.util.AdvancedUtil 根据ticket换取二维码失败：{}
+java.io.FileNotFoundException: G:\temp\gQEF8joAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL29EcnJXRTNsWVdFWW5HSHBCUlRXAAIEzoqHVgMEhAMAAA==.jpg (设备未就绪。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.liufeng.course.util.AdvancedUtil.getQRCode(AdvancedUtil.java:356)
+	at org.liufeng.weixin.main.testClient.testGetQRCode(testClient.java:74)
+	at org.liufeng.weixin.main.testClient.main(testClient.java:164)
+[ERROR] 2016-01-02 16:32:55,197 org.liufeng.course.util.CommonUtil 获取token失败 errcode:40013 errmsg:invalid appid hint: [p3bCCA0575vr18]
+[ERROR] 2016-01-02 16:33:21,528 org.liufeng.course.util.AdvancedUtil 根据ticket换取二维码失败：{}
+java.io.FileNotFoundException: G:\temp\gQHH8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL19qckVld0hsYm1FWHFUdnFLaFRXAAIEUYuHVgMEhAMAAA==.jpg (设备未就绪。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.liufeng.course.util.AdvancedUtil.getQRCode(AdvancedUtil.java:356)
+	at org.liufeng.weixin.main.testClient.testGetQRCode(testClient.java:74)
+	at org.liufeng.weixin.main.testClient.main(testClient.java:164)
+[INFO ] 2016-01-02 16:35:01,642 org.liufeng.course.util.AdvancedUtil 根据ticket换取二维码成功，filePath=d:/temp/gQHe8ToAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL1ZUcWl5QzdsT21GRG1wUnJUQlRXAAIEtYuHVgMEhAMAAA==.jpg
+[ERROR] 2016-01-02 16:36:11,970 org.liufeng.course.util.CommonUtil 获取token失败 errcode:40013 errmsg:invalid appid hint: [M9aLBa0772vr21]
+[INFO ] 2016-01-02 16:36:20,696 org.liufeng.course.util.AdvancedUtil 根据ticket换取二维码成功，filePath=d:/temp/gQHQ8ToAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3RUclM4dFhsUW1FN3UzUlpQQlRXAAIEBYyHVgMEhAMAAA==.jpg
+[ERROR] 2016-01-02 16:59:31,162 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: GUcVKa0171ns66 ]
+[ERROR] 2016-01-02 17:25:31,692 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: _W3dca0732sns3 ]
+[ERROR] 2016-01-02 17:26:04,108 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: Dc2SIa0764ns27 ]
+[ERROR] 2016-01-02 17:55:08,913 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: hw0509ns23 ]
+[ERROR] 2016-01-02 18:04:57,207 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: 6s19EA0098ns54 ]
+[ERROR] 2016-01-02 18:12:19,822 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: 4C31Ea0540ns25 ]
+[ERROR] 2016-01-02 18:17:49,853 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: hmyfka0870ns68 ]
+[ERROR] 2016-01-02 18:18:08,135 org.liufeng.course.util.AdvancedUtil 获取网页授权凭证失败 errcode:40029 errmsg:invalid code, hints: [ req_id: DOu93a0888ns40 ]
+[INFO ] 2016-01-02 18:54:19,247 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwVLZgvf4lR1XeOqlgFwe2nU","msgtype":"text","text":{"content":"111点击查看<a href=\"http://blog.csdn.net/lyq8479\">柳峰的博客</a>"}}
+[ERROR] 2016-01-02 18:54:19,378 org.liufeng.course.util.AdvancedUtil 客服消息发送失败 errcode:45015 errmsg:response out of time limit or subscription is canceled hint: [bHToQa0060age6]
+[INFO ] 2016-01-02 18:54:56,900 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwVLZgvf4lR1XeOqlgFwe2nU","msgtype":"text","text":{"content":"111点击查看<a href=\"http://blog.csdn.net/lyq8479\">柳峰的博客</a>"}}
+[INFO ] 2016-01-02 18:54:57,056 org.liufeng.course.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-02 18:56:02,425 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"111点击查看<a href=\"http://blog.csdn.net/lyq8479\">柳峰的博客</a>"}}
+[ERROR] 2016-01-02 18:56:02,555 org.liufeng.course.util.AdvancedUtil 客服消息发送失败 errcode:45015 errmsg:response out of time limit or subscription is canceled hint: [NNBaYa0163ge10]

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='GBK'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <meta name="viewport" content="width=400,initial-scale=1,user-scalable=0"/>
+            <title>刮刮卡</title>
+            <link type="text/css" rel="stylesheet" href="resources/css/share.css"/>
+            <script type="text/javascript" src="resources/js/jquery.min.js"></script>
+            <link type="text/css" rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css"/>
+            <script type="text/javascript" src="resources/bootstrap/js/bootstrap.min.js"></script>
+            <link type="text/css" rel="stylesheet" href="resources/css/ggk2.css"/>
+            <link type="text/css" rel="stylesheet" href="resources/css/weui.css"/>
+            <script type="text/javascript" src="resources/js/jquery.eraser.js"></script>
+            <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+            <script type="text/javascript" src="resources/js/common1.js"></script>            
+            <script type="text/javascript" src="resources/js/ggk-earse.js"></script>
+            <script type="text/javascript" src="resources/js/sharelog2.js"></script>
+            <script type="text/javascript" src="resources/js/ggk6.js" charset="gbk"></script>
+            <!--<script type="text/javascript" src="resources/js/ggk-yaoyyao.js"></script>-->
+            <!--<script type="text/javascript" src="resources/js/ggk-sound.js"></script>-->
+            <!--<script type="text/javascript" src="resources/js/ggk-dyd.js"></script>-->
+        </h:head>
+        <body ontouchstart="ontouchstart">
+            <div id="toast" style="display: none;">
+                <div class="weui_mask_transparent"></div>
+                <div class="weui_toast">
+                    <i class="weui_icon_toast"></i>
+                    <p class="weui_toast_content" id="toastinfo">祝贺你</p>
+                </div>
+            </div>
+            <div style="height:3em"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1  text-center " style="font-size: 20px;">
+                        <p class="weui_msg_desc" id="noggk">今天没有刮刮卡可以领，欢迎明天再来</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 text-center">
+                        <div>
+                            <div id="robotdiv">
+                                <img id="robot" width="300" height="200" alt="　" src=""/>
+                            </div>
+                            <div id="reduxdiv">
+                                <img id="redux" width="180" height="40" alt="　" src=" "/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4  text-center">
+                        <a href="javascript:again();" id="again" class=" weui_btn  weui_btn_primary">再来一张</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4  text-center">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xs-4 col-xs-offset-4 text-center ">
+                        <a href="javascript:share();" id="sharebtn" class=" weui_btn  weui_btn_primary">分享好友</a>
+                    </div>
+                </div>
+            </div>
+            <div id="shareit" onclick="closeShare();">
+                <img class="arrow" src="resources/img/share-it.png" alt="1"/>
+                 
+                <a href="#" id="follow">
+                    <div id="share-text">
+                        <p>赶紧和你的小伙伴们分享一下你的成果吧</p>
+                        <p>每次分享多有额外奖励哦！</p>
+                    </div>
+                    <!--<img id="share-text" src="http://dev.vxtong.com/cases/nuannan/imgs/share-text.png" alt="1"/>--></a>
+            </div>
+        </body>
+    </html>
+</f:view>

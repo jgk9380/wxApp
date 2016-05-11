@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+    <meta name="keywords" content="speed"/>
+    <meta name="description" content="speed"/>
+    <title>测试你的网速</title>
+    <!--<script src="js/jquery1.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">-->
+    <script src="js/jquery-1.4.min.js"></script>
+    <!--<script src="jquery.js"></script>-->
+    <script src="js/jquery.speedometer.js"></script>
+    <script src="js/jquery.jqcanvas-modified.js"></script>
+      <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/excanvas-modified.js"></script>
+    <script type="text/javascript" src="js/jqmeter.min.js"></script>
+     <link type="text/css" rel="stylesheet" href="../resources/css/share.css"/>
+    <script type="text/javascript" src="../resources/js/sharelog2.js"></script>
+    <script src="js/testSpeed9.js" charset="gbk"></script>
+   
+    <style type="text/css">
+            #testSpeedProgress {
+                width: 268px;
+                height: 30px;
+                margin: 0 auto;
+            }
+        </style>
+</head>
+<body ontouchstart="ontouchstart" style="text-align:center">
+    <br/>
+    <div>
+        <div id="info">上次测速结果</div>
+    </div>
+    <br/>
+    <div id="velometer" style="margin-left: auto;margin-right: auto;"></div>
+    <div>
+        <!--<div id="info">本次测速结果<br/></div>-->
+    </div>
+    <div id="testSpeedProgress"></div>
+    <br/>
+    <div>
+        <a href="#" id="testSpeed">
+            <img height="40" width="268" src="img/begeinTest.png" alt="开始测速 "/></a>
+         
+        <a href="#" id="stop"> 
+            <img height="40" width="268" src="img/stop.png" alt="终止测速 "/></a>
+         
+        <!--<a href="#"> 
+            <img height="40" width="268" src="img/whypromtionspeed.png" alt="提升网速"/></a>-->
+         
+        <a href="javascript:shareMyAccount(this);" id="shareSpeed">
+            <img height="40" width="268" src="img/shareButton.png" alt="炫耀一下"/></a>
+    </div>
+    <div id="shareit" onclick="closeShare();">
+        <img class="arrow" src="../resources/img/share-it.png" alt="1"/>         
+        <a href="#" id="follow">
+            <p id="share-text">
+                赶紧和你的小伙伴们分享一下你的网速吧,
+                <br/>每次分享多有额外奖励哦！
+            </p>
+            <!--<img id="share-text" src="http://dev.vxtong.com/cases/nuannan/imgs/share-text.png" alt="1"/>--></a>
+    </div>
+</body>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+            <title>个人资料</title>
+            <link rel="stylesheet" href="resources/css/common.css"/>
+            <link rel="stylesheet" href="resources/css/weui.css"/>
+            <script type="text/javascript" src="resources/js/jquery1.js"></script>
+            <script type="text/javascript" src="resources/js/common1.js"></script>
+            <script type="text/javascript" src="resources/js/bind3.js"></script>
+        </h:head>
+        <body ontouchstart="ontouchstart">
+            <h:form prependId="false">
+                <div id="toast" style="display: none;">
+                    <div class="weui_mask_transparent"></div>
+                    <div class="weui_toast">
+                        <i class="weui_icon_toast"></i>
+                        <p class="weui_toast_content" id="toastinfo">短信已发出</p>
+                    </div>
+                </div>
+                <div style="height:2em"></div>
+                <img src="#{wxSession.wxUserBo.wxUser.headimgurl}" height="90" width="90" alt=" "/>
+                <div class="page"
+                     style="border:1px solid #888; padding:0.2em 0.2em 0.2em 0.2em ; margin: 0.2em 0.2em 0.2em 0.2em">
+                    <!--<div class="hd center">
+                        <h2 class="page_title ">号码绑定</h2>
+                    </div>-->
+                    <!--<div style="height:0.5em"></div>-->
+                    <div class="weui_cells weui_cells_form">
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">电话号码</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请输入电话号码"
+                                       value="#{wxUser.tele}" id="tele"></input>
+                            </div>
+                            <div class="button_sp_area">
+                                <a href="javascript:getsms(this)" class="weui_btn weui_btn_mini weui_btn_primary"
+                                   id="getyzm">获取验证码</a>
+                            </div>
+                        </div>
+                        <div style="height:0.5em"></div>
+                        <div class="weui_cell weui_vcode">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">验证码</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input id="yzm" class="weui_input" type="number" pattern="[0-9]*"
+                                       placeholder="请输入短信验证码"/>
+                            </div>
+                        </div>
+                        <div style="height:0.5em"></div>
+                    </div>
+                    <div style="height:0.5em"></div>
+                    <a href="javascript:submitVrcode(this)" class="weui_btn weui_btn_disabled weui_btn_primary "
+                       id="binding">提交绑定号码</a>
+                </div>
+                <div style="height:1em"></div>
+                <div class="page"
+                     style="border:1px solid #000; padding:0.2em 0.2em 0.2em 0.2em ; margin: 0.2em 0.2em 0.2em 0.2em">
+                    <!--<div class="hd center">
+                        <h2 class="page_title ">号码绑定</h2>
+                    </div>-->
+                    <div style="height:0.2em"></div>
+                    <div class="weui_cells weui_cells_form">
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">个人姓名:</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="text" placeholder="可以不填写" id="longName"
+                                       value="#{wxUser.longName}"/><!--<label class="weui_label">#{wxUser.longName}</label>-->
+                            </div>
+                        </div>
+                        <div style="height:0.2em"></div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">邮寄地址:</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" placeholder="奖品邮寄用，可以不填写" value="#{wxUser.mailAddr}"
+                                       id="address"/>
+                            </div>
+                        </div>
+                        <div style="height:0.2em"></div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">活动代码:</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" pattern="[0-9]*" placeholder="可以不填写"
+                                       id="promId"/>
+                            </div>
+                        </div>
+                        <div style="height:0.2em"></div>
+                    </div>
+                    <div style="height:0.5em"></div>
+                    <a href="javascript:submitAddInfo(this);" class="weui_btn weui_btn_primary">提交个人资料</a>
+                </div>
+            </h:form>
+        </body>
+    </html>
+</f:view>

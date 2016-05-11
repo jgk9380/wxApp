@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://sms.api.ums86.com:8899/sms_hb/services/Sms?wsdl#%7Bhttp%3A%2F%2Fws.flaginfo.com.cn%7DSms"
+          uri="../cn/com/flaginfo/ws/Sms.wsdl"/>
+</catalog>

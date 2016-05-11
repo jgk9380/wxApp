@@ -1,0 +1,5 @@
+[INFO ] 2016-01-04 18:11:49,235 org.liufeng.weixin.main.MenuManager 菜单创建成功！
+[ERROR] 2016-01-04 18:18:11,846 org.liufeng.course.util.MenuUtil 创建菜单失败 errcode:40054 errmsg:invalid sub button url domain hint: [bJ0tia0691vr23]
+[INFO ] 2016-01-04 18:18:11,847 org.liufeng.weixin.main.MenuManager 菜单创建失败！
+[INFO ] 2016-01-04 18:18:34,185 org.liufeng.weixin.main.MenuManager 菜单创建成功！
+[INFO ] 2016-01-04 18:18:49,079 org.liufeng.weixin.main.MenuManager 菜单创建成功！

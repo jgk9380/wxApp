@@ -1,0 +1,2 @@
+[INFO ] 2016-01-05 10:41:39,996 org.liufeng.course.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"111点击查看<a href=\"http://blog.csdn.net/lyq8479\">柳峰的博客</a>"}}
+[INFO ] 2016-01-05 10:41:40,159 org.liufeng.course.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok

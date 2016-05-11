@@ -1,0 +1,8 @@
+[ERROR] 2016-01-07 17:04:32,533 org.liufeng.course.util.CommonUtil https请求异常：{}
+java.lang.ClassCastException: sun.net.www.protocol.http.HttpURLConnection cannot be cast to javax.net.ssl.HttpsURLConnection
+	at org.liufeng.course.util.CommonUtil.httpsRequest(CommonUtil.java:59)
+	at org.liufeng.weixin.main.testFee.main(testFee.java:16)
+[ERROR] 2016-01-07 17:06:48,183 org.liufeng.course.util.CommonUtil https请求异常：{}
+java.lang.ClassCastException: sun.net.www.protocol.http.HttpURLConnection cannot be cast to javax.net.ssl.HttpsURLConnection
+	at org.liufeng.course.util.CommonUtil.httpRequest(CommonUtil.java:126)
+	at org.liufeng.weixin.main.testFee.main(testFee.java:16)

@@ -1,0 +1,30 @@
+[INFO ] 2016-01-14 16:13:36,838          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"news","news":{"articles":[{"description":"cheshi","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"微信上也能斗地主","url":"http://www.shou.com"}]}}
+[INFO ] 2016-01-14 16:13:37,001          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[ERROR] 2016-01-14 16:25:55,909            org.util.CommonUtil https请求异常：{}
+java.io.IOException: Server returned HTTP response code: 411 for URL: http://114.215.192.27:9001/sms.aspx;?action=send&userid=12&account=280915481&password=888888&mobile=15651554341&content=test&sendTime=&extno=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1839)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at org.util.CommonUtil.httpRequest(CommonUtil.java:148)
+	at org.Sms.sendSms(Sms.java:28)
+	at org.Sms.main(Sms.java:35)
+[ERROR] 2016-01-14 16:27:56,578            org.util.CommonUtil https请求异常：{}
+java.io.IOException: Server returned HTTP response code: 411 for URL: http://114.215.192.27:9001/sms.aspx;?action=send&userid=12&account=280915481&password=888888&mobile=15651554341&content=test&sendTime=&extno=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1839)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at org.util.CommonUtil.httpRequest(CommonUtil.java:143)
+	at org.Sms.sendSms(Sms.java:28)
+	at org.Sms.main(Sms.java:35)
+[ERROR] 2016-01-14 16:29:58,301            org.util.CommonUtil https请求异常：{}
+java.io.IOException: Server returned HTTP response code: 411 for URL: http://114.215.192.27:9001/sms.aspx;?action=send&userid=9682&account=280915481&password=888888&mobile=15651554341&content=test&sendTime=&extno=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1839)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at org.util.CommonUtil.httpRequest(CommonUtil.java:143)
+	at org.Sms.sendSms(Sms.java:30)
+	at org.Sms.main(Sms.java:37)
+[ERROR] 2016-01-14 16:30:17,179            org.util.CommonUtil https请求异常：{}
+java.io.IOException: Server returned HTTP response code: 411 for URL: http://114.215.192.27:9001/sms.aspx?action=send&userid=9682&account=280915481&password=888888&mobile=15651554341&content=test&sendTime=&extno=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1839)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at org.util.CommonUtil.httpRequest(CommonUtil.java:143)
+	at org.Sms.sendSms(Sms.java:30)
+	at org.Sms.main(Sms.java:37)

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!--如果采用log4j输出日志，要对log4j加载配置文件的过程有所了解。
+log4j启动时，默认会寻找source folder下的log4j.xml配置文件，
+若没有，会寻找log4j.properties文件。然后加载配置。
+配置文件放置位置正确，不用在程序中手动加载log4j配置文件。
+如果将配置文件放到了config文件夹下，在build Path中设置下就好了。
+等级可分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL，OFF是关闭，
+-->
+<!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- 输出日志到控制台  ConsoleAppender -->
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="debug"></param>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %c.%t l:%L :{%m} %n"></param>
+            <!--<param name="ConversionPattern"  value="%d{MM-dd HH:mm:ss} %c.%t l:%L %-5p:【%m】 %n">  </param>-->
+        </layout>
+    </appender>
+    <!-- 输出日志到文件  每天一个文件 -->
+    <appender name="dailyRollingFile" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="Threshold" value="WARN"></param>
+        <param name="ImmediateFlush" value="true"></param>
+        <param name="File" value="c:/logs/dailyRollingFile.log"></param>
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"></param>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{MM-dd HH:mm:ss} %c.%t l:%L %-5p:【%m】 %n"></param>
+        </layout>
+    </appender>
+    <!--   
+        定义全局的日志输出级别,但是在输出目的地的配置中配置的具体输出级别优先级高于全局定义的优先级。  
+        dailyRollingFile<param name="Threshold" value="info"></param>，那么将会把info以上级别的信息输出  
+     -->
+    <appender name="DBlogger" class="org.apache.log4j.jdbc.JDBCAppender">
+        <param name="Threshold" value="WARN"></param>
+        <param name="URL" value="jdbc:oracle:thin:@130.34.22.3:1521:ora11g"/>
+        <param name="Driver" value="oracle.jdbc.driver.OracleDriver"/>
+        <param name="User" value="jemtest"/>
+        <param name="Password" value="jemtest"/>
+        <param name="Sql"
+               value="insert into RESLOG(LogId,Class,Method,createTime,LogLevel,MSG) values (id_gen_seq.Nextval,'%C','%M', to_date('%d{yyyy-MM-dd HH:mm:ss}','yyyy-MM-dd HH24:mi:ss'),'%p','%m') "/>
+    </appender>
+    <root>
+        <priority value="debug"/>
+        <appender-ref ref="console"/>
+        <appender-ref ref="DBlogger"/>
+        <!--<appender-ref ref="dailyRollingFile"/>-->
+    </root>
+</log4j:configuration>

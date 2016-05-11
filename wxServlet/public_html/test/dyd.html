@@ -1,0 +1,67 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <style type="text/css">
+            #body {
+                text-align: center;
+            }
+            #test {
+                width: 119px;
+                position: absolute;
+                margin: 10px auto;
+                height: 114px;
+                background: url(http://www.blueidea.com/articleimg/2008/05/5766/01.jpg);
+                border: 2px dotted red;
+            }
+        </style>
+        <script type="text/javascript"></script>
+    </head>
+    <body>
+        <div style='margin:10px 200px'>
+            <div>
+                <input type="button" value="~~~让我抖抖吧~~" onclick="nn.start()"/>
+            </div>
+            <div>
+                <input type="button" value="别抖了眼睛晕的很" onclick="nn.stop()"/>
+            </div>
+            <div id="test"></div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript">
+ var m=document.getElementById("test");
+function SKclass (obj,Rate,speed) {
+	 var oL=obj.offsetLeft;
+	 var oT=obj.offsetTop;
+	 this.stop=null;
+	 this.oTime=null;
+	 this.state=0;
+	 var om=this;
+	 this.start=function(){
+		if(this.state==0){
+		 ostart();
+		 this.state=1;
+		}
+		else{console.log('太厉害了')} 
+	 }
+	 var ostart=function(){
+			 if(parseInt(obj.style.left)==oL-2){
+				obj.style.top=oT+2+"px";
+				setTimeout(function(){obj.style.left=oL+2+"px"},Rate)
+			 }
+			 else{
+				obj.style.top=oT-2+"px";
+				setTimeout(function(){obj.style.left=oL-2+"px"},Rate)
+			}
+		om.oTime=setTimeout(function(){ostart()},speed);
+	 }
+	 this.stop=function(){
+	   clearTimeout(om.oTime);
+	   this.state=0;
+	 
+	 }
+}
+var nn=new SKclass(m,20,50);
+</script>

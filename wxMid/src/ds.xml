@@ -1,0 +1,27 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans                 http://www.springframework.org/schema/beans/spring-beans-4.0.xsd ">
+    <!--<bean id="jndiDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName">
+            <value>bastest</value>
+        </property>
+        <property name="jndiEnvironment">
+            <props>
+                <prop key="java.naming.provider.url">T3://10.35.32.53:7001</prop>
+                <prop key="java.naming.factory.initial">weblogic.jndi.WLInitialContextFactory</prop>
+            </props>
+        </property>
+    </bean>-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <!--<property name="url" value="jdbc:oracle:thin:@122.192.127.45:1521:orcl"/>-->
+        <!--<property name="url"
+                  value="jdbc:oracle:thin:@130.34.22.36:1521:orcl?useUnicode%3Dtrue%26characterEncoding%3DUTF-8"/>-->
+        <property name="url" value="jdbc:oracle:thin:@130.34.22.36:1521:orcl"/>
+        <property name="username" value="wxtest"/>
+        <property name="password" value="wxtest"/>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" scope="singleton">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+</beans>

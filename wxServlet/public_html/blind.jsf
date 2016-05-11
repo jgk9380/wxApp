@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+            <title>找盲点</title>
+            <link rel="stylesheet" href="resources/css/common.css"/>
+            <link rel="stylesheet" href="resources/css/weui.css"/>
+            <link type="text/css" rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css"/>
+            <script type="text/javascript" src="resources/js/jquery1.js"></script>
+            <script type="text/javascript" src="resources/js/common1.js"></script>
+            <script type="text/javascript" src="resources/js/blind.js" charset="gbk"></script>
+            <body ontouchstart="ontouchstart">
+                <div style="height:1em;"></div>
+                <div id="toast" style="display: none;">
+                    <div class="weui_mask_transparent"></div>
+                    <div class="weui_toast">
+                        <i class="weui_icon_toast"></i>
+                        <p class="weui_toast_content" id="toastinfo">info</p>
+                    </div>
+                </div>
+                <div style="height:2em;font-size:150%">信号问题上报</div>
+                <h:form prependId="false">
+                    <div class="page"
+                         style="border:1px solid #888; padding:0.2em 0.2em 0.2em 0.2em ; margin: 0.2em 0.2em 0.2em 0.2em">
+                        <div class="weui_cells weui_cells_form">
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">电话号码：</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请输入电话号码"
+                                           id="tele" value=""></input>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">姓名：</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input class="weui_input" id="name" placeholder="请输入姓名" value=""></input>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">信号区域：</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <div class="weui_cell weui_cell_select">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <select class="weui_select" id="area" >
+                                                <option value="市区">市区</option>
+                                                <option value="亭湖">亭湖</option>
+                                                <option value="盐都">盐都</option>
+                                                <option value="城南">城南</option>
+                                                <option value="东台">东台</option>
+                                                <option value="大丰">大丰</option>
+                                                <option value="射阳">射阳</option>
+                                                <option value="建湖">建湖</option>
+                                                <option value="阜宁">阜宁</option>
+                                                <option value="滨海">滨海</option>
+                                                <option value="响水">响水</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label" >详细地址：</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input class="weui_input" id="adress" value="" placeholder="具体到小区或门牌号码的地址"></input>
+                                </div>
+                            </div>
+                            <!--<div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">信号类型：</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <select id="signalType">
+                                    <option value="2G">2G</option>
+                                    <option value="3G">3G</option>
+                                    <option value="4G">4G</option>                                   
+                                </select>
+                            </div>
+                        </div>-->
+                            <!--<div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">手机类型：</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                   <input class="weui_input" id="phoneMobile" placeholder="请填写手机品牌及信号"></input>
+                            </div>
+                        </div>-->
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">信号强度：</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <div class="weui_cell weui_cell_select">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <select class="weui_select" id="signalStrength" >
+                                                <option value="5格">5格</option>
+                                                <option value="4格">4格</option>
+                                                <option value="3格">3格</option>
+                                                <option value="2格">2格</option>
+                                                <option value="1格">1格</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">信号情况：</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <div class="weui_cell weui_cell_select">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <select class="weui_select" id="signalDesc" >
+                                                <option value="语音信号不好">语音信号不好</option>
+                                                <option value="上网信号不好">上网信号不好</option>
+                                                <option value="无法上网">无法上网</option>
+                                                <option value="无法通话">无法通话</option>
+                                                <option value="以上多不好">以上多不好</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label"  >其他：</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input class="weui_input" id="other" value="" placeholder="请填写其他要反应的问题"></input>
+                                </div>
+                            </div>
+                            <a href="javascript:submitSingleInfo();" class="weui_btn weui_btn_primary">提交</a>
+                        </div>
+                    </div>
+                </h:form>
+            </body>
+        </h:head>
+    </html>
+</f:view>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-widget {
+}
+
+.ui-dialog {
+    border-color: #d6d6ff;
+}
+
+.ui-dialog-titlebar {
+    color: #313131;
+    background: #d6d6d6;
+}
+
+.ui-dialog-buttonpane {
+    background: #d6d6d6;
+}
+
+.ui-dialog-buttonpane .ui-dialog-buttonset {
+    margin: 0px;
+    padding: 0pt;
+    text-align: center;
+}
+/*ui-dialog：对话框的外层容器。
+ui-dialog-titlebar：包含对话框标题和关闭按钮的标题栏。
+ui-dialog-title：对话框文本标题周围的容器。
+ui-dialog-titlebar-close：对话框的关闭按钮。
+ui-dialog-content：对话框内容周围的容器。这也是部件被实例化的元素。
+ui-dialog-buttonpane：包含对话按钮的面板。只有当设置了 buttons 选项时才呈现。
+ui-dialog-buttonset：按钮周围的容器。
+此外，当设置了 modal 选项时，一个带有 ui-widget-overlay class 名称的元素被追加到 <body>。*/
+.even {
+    background: #d6e7ff;
+}
+
+.odd {
+    background: #e7e7e7;
+}
+
+.selected {
+    background: #FF9900;
+}
+
+
+
+table {
+    border: solid  #212121 ;
+    border-width: 0px;
+     border-collapse:collapse;
+}
+
+td {
+ border: solid  #212121 ;
+    border-width: 0px 1px 0px 0px;
+    margin: 6px;
+    padding: 6px;
+}
+th {
+ border: solid  #212121 ;
+    border-width: 0px 1px 0px 0px;
+    margin:  6px;
+    padding: 6px;
+}
+
+
+.useConpon {
+    text-decoration: underline;
+}

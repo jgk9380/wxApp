@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:task="http://www.springframework.org/schema/task" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd                                                 http://www.springframework.org/schema/aop         http://www.springframework.org/schema/aop/spring-aop-4.0.xsd                                                                           http://www.springframework.org/schema/context     http://www.springframework.org/schema/context/spring-context-4.0.xsd                                                                      http://www.springframework.org/schema/tx          http://www.springframework.org/schema/tx/spring-tx-4.0.xsd                                              http://www.springframework.org/schema/data/jpa    http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd                                                                  http://www.springframework.org/schema/cache       http://www.springframework.org/schema/cache/spring-cache-4.0.xsd                          ">
+    <import resource="classpath:dao.xml"/>
+    <bean id="userService" class="org.util.UserServiceImpl" scope="singleton">
+        <property name="userName" value="15651554341"/>
+        <property name="password" value="182325"/>
+    </bean>
+   
+    <bean id="sms" class="org.util.smsone.OneSms" scope="singleton">
+        <property name="url" value="http://sms.api.ums86.com:8899/sms_hb/services/Sms?wsdl"/>
+        <property name="corpId" value="231149"/>
+        <property name="loginId" value="yc_hlxx"/>
+        <property name="pwd" value="yclt123"/>
+    </bean>
+    <bean id="wxConfig" class="org.WxConfigImpl" scope="singleton">
+        <property name="webAddress" value="/wx3/"/>
+    </bean>
+</beans>

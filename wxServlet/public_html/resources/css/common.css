@@ -1,0 +1,23 @@
+@charset "GBK";
+
+body {
+    TEXT-ALIGN: center;
+}
+
+.center {
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+}
+
+.row {
+    margin: 20px 0 0 0;
+}
+
+ 
+.btn {
+    width: 200px;   
+    color: Black;
+    font-size: large;
+    margin-top: 10px;
+  
+}

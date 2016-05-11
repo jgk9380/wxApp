@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>摇一摇功能</title>
+        <script type="text/javascript">
+          var SHAKE_THRESHOLD = 4000;
+          var last_update = 0;
+          var x = y = z = last_x = last_y = last_z = 0;
+
+          function init() {
+              if (window.DeviceMotionEvent) {
+                  window.addEventListener('devicemotion', deviceMotionHandler, false);
+              }
+              else {
+                  alert('not support mobile event');
+              }
+          }
+
+          function deviceMotionHandler(eventData) {
+              var acceleration = eventData.accelerationIncludingGravity;
+              var curTime = new Date().getTime();
+              if ((curTime - last_update) > 200) {
+                  var diffTime = curTime - last_update;
+                  last_update = curTime;
+                  x = acceleration.x;
+                  y = acceleration.y;
+                  z = acceleration.z;
+                  var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
+                  //alert(speed);
+                  if (speed > SHAKE_THRESHOLD) {
+                      //alert(speed);
+                      alert("摇动了" + speed);
+                      media.setAttribute("src", "http://211.148.5.228:8002/Pages/test/Kalimba.mp3");
+                      media.load();
+                      media.play();
+                  }
+                  last_x = x;
+                  last_y = y;
+                  last_z = z;
+              }
+          }
+        </script>
+    </head>
+    <body onload="init()">
+        <p>用力摇一摇你手机</p>
+     
+         
+        <button onclick="audio.play();">播放</button>
+         
+        <button onclick="audio.pause();">暂停</button>
+        <audio id='audio' src="http://fjlt.sc.chinaz.com/files/download/sound1/201410/5012.wav"></audio>
+        <!--<audio style="display:none" id="musicBox" preload="metadata" controls="controls"
+                   src="resources/yaoyiyao.wav" autoplay="false"></audio>-->
+    </body>
+</html>  

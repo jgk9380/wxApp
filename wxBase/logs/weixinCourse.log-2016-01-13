@@ -1,0 +1,56 @@
+[INFO ] 2016-01-13 08:45:33,588          org.util.AdvancedUtil 消息内容：{"touser":"oEdzejiHCDqafJbz4WNJtWTMbDcE","msgtype":"text","text":{"content":"test"}}
+[ERROR] 2016-01-13 08:45:33,727          org.util.AdvancedUtil 客服消息发送失败 errcode:40003 errmsg:invalid openid hint: [NNIVOA0934age5]
+[INFO ] 2016-01-13 08:46:06,266          org.util.AdvancedUtil 消息内容：{"touser":"oEdzejiHCDqafJbz4WNJtWTMbDcE","msgtype":"text","text":{"content":"test"}}
+[ERROR] 2016-01-13 08:46:06,397          org.util.AdvancedUtil 客服消息发送失败 errcode:40003 errmsg:invalid openid hint: [__Rh40967ge10]
+[INFO ] 2016-01-13 08:49:01,183          org.util.AdvancedUtil 消息内容：{"touser":"oEdzejiHCDqafJbz4WNJtWTMbDcE","msgtype":"text","text":{"content":"test"}}
+[ERROR] 2016-01-13 08:49:01,325          org.util.AdvancedUtil 客服消息发送失败 errcode:40003 errmsg:invalid openid hint: [GeVniA0142age3]
+[INFO ] 2016-01-13 08:49:51,351          org.util.AdvancedUtil 消息内容：{"touser":"oEdzejiHCDqafJbz4WNJtWTMbDcE","msgtype":"text","text":{"content":"test"}}
+[ERROR] 2016-01-13 08:49:51,487          org.util.AdvancedUtil 客服消息发送失败 errcode:40003 errmsg:invalid openid hint: [jHRi3a0192age8]
+[INFO ] 2016-01-13 08:51:00,810          org.util.AdvancedUtil 消息内容：{"touser":"oEdzejiHCDqafJbz4WNJtWTMbDcE","msgtype":"text","text":{"content":"test"}}
+[ERROR] 2016-01-13 08:51:00,950          org.util.AdvancedUtil 客服消息发送失败 errcode:40003 errmsg:invalid openid hint: [dvyPha0261age6]
+[INFO ] 2016-01-13 08:51:16,702          org.util.AdvancedUtil 消息内容：{"touser":"oEdzejiHCDqafJbz4WNJtWTMbDcE","msgtype":"text","text":{"content":"test"}}
+[ERROR] 2016-01-13 08:51:16,839          org.util.AdvancedUtil 客服消息发送失败 errcode:40003 errmsg:invalid openid hint: [FIGFta0277age9]
+[INFO ] 2016-01-13 08:51:28,316          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[ERROR] 2016-01-13 08:51:28,458          org.util.AdvancedUtil 客服消息发送失败 errcode:45015 errmsg:response out of time limit or subscription is canceled hint: [j.3.Wa0289age7]
+[INFO ] 2016-01-13 08:52:05,045          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[INFO ] 2016-01-13 08:52:05,203          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 08:52:14,337          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[INFO ] 2016-01-13 08:52:14,488          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 08:52:19,998          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[INFO ] 2016-01-13 08:52:20,152          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 08:52:22,271          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[INFO ] 2016-01-13 08:52:22,417          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 08:52:26,313          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[INFO ] 2016-01-13 08:52:26,458          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 10:24:07,588          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[INFO ] 2016-01-13 10:24:07,752          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 10:24:08,855          org.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFk8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL21EclZ0T25sYzJFSzdsc3BPeGJXAAIESLWVVgMEAAAAAA==
+[ERROR] 2016-01-13 10:24:09,048          org.util.AdvancedUtil 根据ticket换取二维码失败：{}
+java.io.FileNotFoundException: c:	emp\gQFk8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL21EclZ0T25sYzJFSzdsc3BPeGJXAAIESLWVVgMEAAAAAA==.jpg (文件名、目录名或卷标语法不正确。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.util.AdvancedUtil.getQRCode(AdvancedUtil.java:367)
+	at org.YctxqWxOperator.getQRCode(YctxqWxOperator.java:88)
+	at org.YctxqWxOperator.main(YctxqWxOperator.java:154)
+[INFO ] 2016-01-13 10:25:18,805          org.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFk8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL21EclZ0T25sYzJFSzdsc3BPeGJXAAIESLWVVgMEAAAAAA==
+[INFO ] 2016-01-13 10:25:18,971          org.util.AdvancedUtil 根据ticket换取二维码成功，filePath=c:\Temp/gQFk8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL21EclZ0T25sYzJFSzdsc3BPeGJXAAIESLWVVgMEAAAAAA==.jpg
+[INFO ] 2016-01-13 10:28:29,088          org.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHZ8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL05VT2RBT25sTU8xSk5RcWhUV19tAAIETbaVVgMEAAAAAA==
+[INFO ] 2016-01-13 10:28:29,276          org.util.AdvancedUtil 根据ticket换取二维码成功，filePath=c:\Temp/gQHZ8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL05VT2RBT25sTU8xSk5RcWhUV19tAAIETbaVVgMEAAAAAA==.jpg
+[INFO ] 2016-01-13 10:32:04,197          org.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHZ8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL05VT2RBT25sTU8xSk5RcWhUV19tAAIETbaVVgMEAAAAAA==
+[INFO ] 2016-01-13 10:32:04,371          org.util.AdvancedUtil 根据ticket换取二维码成功，filePath=c:\Temp/gQHZ8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL05VT2RBT25sTU8xSk5RcWhUV19tAAIETbaVVgMEAAAAAA==.jpg
+[INFO ] 2016-01-13 10:33:35,807          org.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFk8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL21EclZ0T25sYzJFSzdsc3BPeGJXAAIESLWVVgMEAAAAAA==
+[INFO ] 2016-01-13 10:33:35,972          org.util.AdvancedUtil 根据ticket换取二维码成功，filePath=c:\Temp/gQFk8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL21EclZ0T25sYzJFSzdsc3BPeGJXAAIESLWVVgMEAAAAAA==.jpg
+[INFO ] 2016-01-13 11:16:53,712          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"test"}}
+[INFO ] 2016-01-13 11:16:53,872          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 11:17:06,059          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"text","text":{"content":"{\"touser\":\"oEsXmwWQkf6V5KaLUMHCQHpC8F1E\",\"msgtype\":\"news\",\"news\":{\"articles\":[{\"description\":\"\",\"picurl\":\"http://www.egouji.com/xiaoq/game/doudizhu_big.png\",\"title\":\"微信上也能斗地主\",\"url\":\"http://resource.duopao.com/duopao/games/small_games/weixingame/Doudizhu/doudizhu.htm\"},{\"description\":\"\",\"picurl\":\"http://www.egouji.com/xiaoq/game/aoqixiongying.png\",\"title\":\"傲气雄鹰\n80后不得不玩的经典游戏\",\"url\":\"http://resource.duopao.com/duopao/games/small_games/weixingame/Plane/aoqixiongying.html\"}]}}"}}
+[INFO ] 2016-01-13 11:17:06,230          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 11:24:24,934          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"news","news":{"articles":[{"description":"","picurl":"http://www.egouji.com/xiaoq/game/doudizhu_big.png","title":"微信上也能斗地主","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Doudizhu/doudizhu.htm"},{"description":"","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"傲气雄鹰\n80后不得不玩的经典游戏","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Plane/aoqixiongying.html"}]}}
+[INFO ] 2016-01-13 11:24:25,091          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 11:27:53,358          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"news","news":{"articles":[{"description":"","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"微信上也能斗地主","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Doudizhu/doudizhu.htm"},{"description":"","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"傲气雄鹰\n80后不得不玩的经典游戏","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Plane/aoqixiongying.html"}]}}
+[INFO ] 2016-01-13 11:27:53,535          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 11:29:42,536          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"news","news":{"articles":[{"description":"55l;jk'","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"微信上也能斗地主","url":"http://resource.duopao.com/duopao/games/small_games/weixingame/Doudizhu/doudizhu.htm"}]}}
+[INFO ] 2016-01-13 11:29:42,706          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
+[INFO ] 2016-01-13 11:30:41,118          org.util.AdvancedUtil 消息内容：{"touser":"oEsXmwWQkf6V5KaLUMHCQHpC8F1E","msgtype":"news","news":{"articles":[{"description":"cheshi","picurl":"http://www.egouji.com/xiaoq/game/aoqixiongying.png","title":"微信上也能斗地主","url":"http://www.shou.com"}]}}
+[INFO ] 2016-01-13 11:30:41,286          org.util.AdvancedUtil 客服消息发送成功 errcode:0 errmsg:ok
